@@ -1,0 +1,9 @@
+[submodule "drishti-cog"]
+	path = drishti-cog
+	url = https://github.com/dermatologist/drishti-cog
+[submodule "drishti-plan"]
+	path = drishti-plan
+	url = https://github.com/dermatologist/drishti-plan
+[submodule "drishti-act"]
+	path = drishti-act
+	url = https://github.com/dermatologist/drishti-act

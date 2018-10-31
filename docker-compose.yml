@@ -1,0 +1,29 @@
+version: '3.0'
+services:
+  resource-server:
+    image: openmhealth/shimmer-resource-server
+    restart: always
+    environment:
+      SPRING_PROFILES_ACTIVE: development
+    depends_on:
+      - mongo
+    ports:
+      - "8084:8083"
+
+  mongo:
+    image: mongo
+    restart: always
+
+  console:
+    image: openmhealth/shimmer-console
+    restart: always
+    ports:
+      - "8083:8083"
+    depends_on:
+      - resource-server
+
+  mdata-db:
+    image: postgres:latest
+    restart: always
+    expose:
+      - 5432
