@@ -2,13 +2,13 @@ version: '3.0'
 services:
   resource-server:
     image: openmhealth/shimmer-resource-server
-    restart: always
-    environment:
-      SPRING_PROFILES_ACTIVE: development
+    #restart: always
+    #environment:
+      #SPRING_PROFILES_ACTIVE: development
     depends_on:
       - mongo
-    ports:
-      - "8084:8083"
+    #ports:
+      #- "8084:8083"
 
   mongo:
     image: mongo
@@ -25,38 +25,38 @@ services:
     links:
       - mongo:omh-mongo
       - postgres:omh-postgres
-    ports:
-      - "8082:8082"
+    #ports:
+      #- "8082:8082"
 
   dsu-resource-server:
     image: openmhealth/omh-dsu-resource-server:latest
     links:
       - mongo:omh-mongo
       - postgres:omh-postgres
-  ports:
-    - "8083:8083"
+    #ports:
+      #- "8083:8083"
 
   console:
     image: openmhealth/shimmer-console
-    restart: always
-    ports:
-      - "8083:8083"
+    #restart: always
+    #ports:
+      #- "8083:8083"
     depends_on:
       - resource-server
 
-  mdata-db:
-    image: postgres:latest
-    restart: always
-    expose:
-      - 5432
+  #mdata-db:
+    #image: postgres:latest
+    #restart: always
+    #expose:
+      #- 5432
   haproxy:
     build: ./haproxy/.
     image: beapen/ffohdsi-haproxy:latest
     ports:
       - "8080:8080"
       - "8090:5001"
-    networks:
-      - overlay
+    #networks:
+      #- overlay
     depends_on:
-      - ff-ohdsi
+      - resource-server
 
