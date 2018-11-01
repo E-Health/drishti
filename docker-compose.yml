@@ -49,9 +49,9 @@ services:
     #restart: always
     #expose:
       #- 5432
-  haproxy:
+  drishti-haproxy:
     build: ./haproxy/.
-    image: beapen/ffohdsi-haproxy:latest
+    image: beapen/drishti-haproxy:latest
     ports:
       - "8080:8080"
       - "8090:5001"
