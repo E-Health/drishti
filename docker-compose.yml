@@ -7,6 +7,10 @@ services:
       #SPRING_PROFILES_ACTIVE: development
     depends_on:
       - mongo
+    env_file:
+      - resource-server.env
+    links:
+      - mongo:omh-mongo
     #ports:
       #- "8084:8083"
 

@@ -128,3 +128,6 @@ local.properties
 /gradlew
 /src/main/resources/js/bundle.js
 /src/main/resources/FHIRForms/
+
+# env file
+resource-server.env
