@@ -64,3 +64,8 @@ services:
     depends_on:
       - resource-server
 
+  drishti-cog:
+    build: ./drishti-cog/.
+    image: beapen/drishti-cog:latest
+    depends_on:
+      - resource-server
