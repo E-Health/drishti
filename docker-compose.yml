@@ -22,6 +22,8 @@ services:
   # TODO: prepopulation script resources/rdbms/postgresql
   postgres:
     image: postgres:latest
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     #restart: always
 
   authorizationserver:
