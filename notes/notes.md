@@ -9,6 +9,8 @@
 http://tomcat.nuchange.ca/authorize/googlefit?username="username" - http://<shimmer-host>:8083/authorize/{shimKey}?username={userId}
 http://tomcat.nuchange.ca/authorize/googlefit/callback?state="whatever" - http://<<shimmer-host>:8083/authorize/{shimKey}/callback
 
+ {[/deauthorize/{shim}],methods=[DELETE]
+{[/data/{shim}/{dataType}]
 
 ## Routes for console (Port is 8083 not 8084)
 

@@ -3,8 +3,8 @@ services:
   resource-server:
     image: openmhealth/shimmer-resource-server
     #restart: always
-    #environment:
-      #SPRING_PROFILES_ACTIVE: development
+    environment:
+      SPRING_PROFILES_ACTIVE: development
     depends_on:
       - mongo
     env_file:
@@ -21,9 +21,8 @@ services:
   # PostgreSQL is used to store OAuth 2.0 client credentials and access tokens.
   # TODO: prepopulation script resources/rdbms/postgresql
   postgres:
-    image: postgres:latest
-    volumes:
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    build: ./postgresql/.
+    image: beapen/drishti-postgres:latest
     #restart: always
 
   authorizationserver:
