@@ -59,7 +59,7 @@ services:
     image: beapen/drishti-haproxy:latest
     ports:
       - "8080:8080"
-      - "8090:5001"
+      - "8077:5001"
     #networks:
       #- overlay
     depends_on:
