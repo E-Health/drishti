@@ -70,3 +70,28 @@ services:
     image: beapen/drishti-cog:latest
     depends_on:
       - resource-server
+
+  mdata-app:
+    build:
+      context: ./OMH-on-FHIR/omhserver
+      dockerfile: Dockerfile
+    image: beapen/omh-fhir-app:latest
+    #restart: always
+    #ports:
+      #- "8888:8080"
+    #env_file:
+      #- ./omhserver/omh-server.env
+    depends_on:
+      - postgres
+
+  omh-on-fhir-client:
+    build:
+      #specifiy the project build context
+      context: ./OMH-on-FHIR/omhclient
+      #specifiy the Dockerfile to use
+      dockerfile: Dockerfile
+    image: beapen/omh-fhir-client:latest
+    #restart: always
+    #bind host port 8989 to container port 8080
+    #ports:
+      #- "8989:80"
