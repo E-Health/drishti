@@ -131,3 +131,4 @@ local.properties
 
 # env file
 resource-server.env
+omh-server.env

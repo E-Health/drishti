@@ -79,8 +79,8 @@ services:
     #restart: always
     #ports:
       #- "8888:8080"
-    #env_file:
-      #- ./omhserver/omh-server.env
+    env_file:
+      - omh-server.env
     depends_on:
       - postgres
 
