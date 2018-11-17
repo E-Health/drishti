@@ -3,8 +3,8 @@ services:
   resource-server:
     image: openmhealth/shimmer-resource-server
     #restart: always
-    environment:
-      SPRING_PROFILES_ACTIVE: development
+#    environment:
+#      SPRING_PROFILES_ACTIVE: development
     depends_on:
       - mongo
     env_file:
