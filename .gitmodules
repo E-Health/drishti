@@ -7,6 +7,6 @@
 [submodule "drishti-act"]
 	path = drishti-act
 	url = https://github.com/dermatologist/drishti-act
-[submodule "OMH-on-FHIR"]
-	path = OMH-on-FHIR
-	url = https://github.com/E-Health/OMH-on-FHIR
+[submodule "openmrs-owa-drishti"]
+	path = openmrs-owa-drishti
+	url = https://github.com/dermatologist/openmrs-owa-drishti
