@@ -16,6 +16,8 @@ Drishti is a conceptual extension of the [open mHealth](http://www.openmhealth.o
 
 ## Drishti is work in progress and is not ready for use.
 *  [Contact](https://nuchange.ca/contact)
+[![Drishti](https://raw.github.com/E-Health/drishti/master/notes/drishti.png)](http://canehealth.com)
+* Currently working on Drishti-cog and Openmrs-owa-drishti
 
 ## Contributors
 * [Bell Eapen](https://nuchange.ca) (McMaster U)
