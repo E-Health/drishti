@@ -7,7 +7,7 @@ Drishti is a conceptual extension of the [open mHealth](http://www.openmhealth.o
 * [Drishti-plan](https://github.com/dermatologist/drishti-plan) is a python flask API that provides a (FHIR) careplan based on aggregate data using AI.
 * [Drishti-act](https://github.com/dermatologist/drishti-act) is a SMART-ON-FHIR application in Vue.js that can deliver the careplan to the mobile device as alerts and messages
 * [Drishti-cog](https://github.com/dermatologist/drishti-cog) is the central hub and repository, integrating various services using FHIR as the interface standard.
-* [Drishti-EMR](https://github.com/dermatologist/openmrs-owa-drishti) is an [OpenMRS](https://openmrs.org) OWA and an OpenMRS module that provides the user interface for both clinicians (module) and patients (OWA)
+* [Drishti-EMR](https://github.com/dermatologist/openmrs-owa-drishti) is an [OpenMRS OWA](https://wiki.openmrs.org/display/docs/Open+Web+Apps+Module) OWA and an [OpenMRS module](https://wiki.openmrs.org/display/docs/Creating+Modules) that provide the user interface for both clinicians (module) and patients (OWA)
 
 ## Instructions
 
