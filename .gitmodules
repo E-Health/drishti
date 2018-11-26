@@ -10,3 +10,6 @@
 [submodule "openmrs-owa-drishti"]
 	path = openmrs-owa-drishti
 	url = https://github.com/dermatologist/openmrs-owa-drishti
+[submodule "openmrs-module-drishti"]
+	path = openmrs-module-drishti
+	url = https://github.com/dermatologist/openmrs-module-drishti.git
