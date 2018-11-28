@@ -11,8 +11,15 @@ Drishti is a conceptual extension of the [open mHealth](http://www.openmhealth.o
 
 ## Instructions
 
+* Drishti is not ready for use. The following instructions are only for those who want to contribute/join the project.
+
 * Rename resource-server-example.env to resource-server.env and add credentials
 
+* Build Drishti-cog
+
+Drishti-cog is a Spring-boot application, but it has a dependency on omhserver. How to install the dependency in maven locally is explained [here.](https://github.com/E-Health/OMH-on-FHIR)
+ * Build openmrs-owa-drishti as explained [here.](https://github.com/dermatologist/openmrs-owa-vue-boilerplate)
+* Other modules are currently just stubs. 
 
 ## Drishti is work in progress and is not ready for use.
 *  [Contact](https://nuchange.ca/contact)
