@@ -46,7 +46,7 @@ services:
       - resource-server
 
   drishti-cog:
-    build: .
+    build: ./drishti-cog/.
     image: beapen/drishti-cog:latest
     depends_on:
       - resource-server
@@ -64,5 +64,5 @@ services:
       DB_AUTO_UPDATE: 'true'    # change to 'true' if using an empty database
       MODULE_WEB_ADMIN: 'true'   # allow web admin on OpenMRS
     volumes:
-      - ./openmrs-owa-drishti/dist:/usr/local/tomcat/.OpenMRS/owa/     # used to mount persistent docker volume for owa
-      - ./openmrs-module-drishti/target:/usr/local/tomcat/.OpenMRS/modules/     # used to mount persistent docker volume for modules
+      - ./openmrs-owa-drishti/dist:/usr/local/tomcat/.OpenMRS/owa/drishti     # used to mount persistent docker volume for owa
+      #- ./openmrs-module-drishti/target:/usr/local/tomcat/.OpenMRS/modules/     # used to mount persistent docker volume for modules
