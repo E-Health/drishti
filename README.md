@@ -9,9 +9,11 @@ Drishti is a conceptual extension of the [open mHealth](http://www.openmhealth.o
 * [Drishti-cog](https://github.com/dermatologist/drishti-cog) is the central hub and repository, integrating various services using FHIR as the interface standard.
 * [Drishti-EMR](https://github.com/dermatologist/openmrs-owa-drishti) is an [OpenMRS OWA](https://wiki.openmrs.org/display/docs/Open+Web+Apps+Module) OWA and an [OpenMRS module](https://wiki.openmrs.org/display/docs/Creating+Modules) that provide the user interface for both clinicians (module) and patients (OWA)
 
+[![Drishti](https://raw.github.com/E-Health/drishti/develop/notes/drishti.png)](http://canehealth.com)
+
 ## Instructions
 
-* Drishti is not ready for use. The following instructions are only for those who want to contribute/join the project.
+* ***Drishti is not ready for use. The following instructions are only for those who want to contribute/join the project.***
 
 * Rename resource-server-example.env to resource-server.env and add credentials
 * Shimmer container is included in docker-compose.
@@ -25,17 +27,17 @@ Drishti-cog is a Spring-boot application, but it has a dependency on omhserver. 
  npm run build
  ```
 * OpenMRS container is included in docker-compose. The OWA and module needs to be uploaded using OpenMRS user interface for now.
-* Other modules are currently just stubs. 
+* Other modules are currently just stubs.
+
+* Drishti Uses Vue for frontend development. OMH ecosystem is Angular 1.x based.
+* Drishti uses FHIR as the data model for data exchange and persistence. 
+* Drishti relies on [hGraph](http://hgraph.org/) for data visualization.
 
 ## How to Use
 * OpenMRS at /openmrs
 * Drishti-cog at /
-
-## Drishti is work in progress and is not ready for use.
-*  [Contact](https://nuchange.ca/contact)
-[![Drishti](https://raw.github.com/E-Health/drishti/develop/notes/drishti.png)](http://canehealth.com)
 * Currently working on [Drishti-cog](https://github.com/dermatologist/drishti-cog) and [Drishti-EMR](https://github.com/dermatologist/openmrs-owa-drishti)
 
 ## Contributors
-* [Bell Eapen](https://nuchange.ca) (McMaster U)
-
+* [Bell Eapen](https://nuchange.ca) (McMaster U) |  [Contact](https://nuchange.ca/contact)
+* See also:  [:fire: The FHIRForm framework for managing healthcare eForms](https://github.com/E-Health/fhirform)
