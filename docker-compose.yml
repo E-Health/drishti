@@ -52,7 +52,7 @@ services:
       - resource-server
 
   drishti-emr:
-    image: openmrs/openmrs-reference-application-distro
+    image: openmrs/openmrs-reference-application-distro:modules
     depends_on:
       - mysql
     environment:
