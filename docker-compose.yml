@@ -66,3 +66,4 @@ services:
     volumes:
       - ./openmrs-owa-drishti/dist:/usr/local/tomcat/.OpenMRS/owa/drishti     # used to mount persistent docker volume for owa
       - ./openmrs-module-drishti/target:/usr/local/tomcat/.OpenMRS/modules/     # used to mount persistent docker volume for modules
+      - ./notes:/usr/local/tomcat/.OpenMRS     # used to change runtime.properties.
