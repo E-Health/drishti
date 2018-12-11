@@ -40,6 +40,8 @@ Drishti-cog is a Spring-boot application, but it has a dependency on omhserver. 
 * Currently working on [Drishti-cog](https://github.com/dermatologist/drishti-cog), [Drishti-PHR](https://github.com/dermatologist/openmrs-module-drishti) and [Drishti-EMR](https://github.com/dermatologist/openmrs-owa-drishti)
 * Pull requests welcome to all sub-repositories.
 
+[![OpenMRS](https://raw.github.com/E-Health/drishti/develop/notes/openmrs.png)](http://nuchange.ca)
+
 ## Contributors
 * [Bell Eapen](https://nuchange.ca) (McMaster U) |  [Contact](https://nuchange.ca/contact)
 * See also:  [:fire: The FHIRForm framework for managing healthcare eForms](https://github.com/E-Health/fhirform)
