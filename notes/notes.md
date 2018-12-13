@@ -1,5 +1,10 @@
 # Notes
 
+## :point_right: Generating drishti-emr
+
+* Copy openmrs-distro.properties from ~/openmrs/<server-name>/openmrs-distro.properties to openmrs-module-drishti root folder
+* mvn openmrs-sdk:build-distro -Ddir=drishti-emr
+
 ## haproxy redirect
 * https://stackoverflow.com/questions/30256571/haproxy-path-to-host-path
 * https://cbonte.github.io/haproxy-dconv/1.7/configuration.html
