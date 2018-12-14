@@ -132,3 +132,6 @@ local.properties
 # env file
 resource-server.env
 omh-server.env
+
+# drishti emr docker files
+drishti-emr/web

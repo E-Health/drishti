@@ -52,7 +52,7 @@ services:
       - resource-server
 
   drishti-emr:
-    build: ./drishti-emr/.
+    build: ./drishti-emr/web/.
     image: beapen/drishti-emr
     depends_on:
       - mysql
