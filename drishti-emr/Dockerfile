@@ -55,7 +55,7 @@ RUN apk add --update openjdk8 curl; \
 
 COPY drishti-1.0.0-SNAPSHOT.omod ${OPENMRS_HOME}/modules/drishti-1.0.0-SNAPSHOT.omod
 COPY owa-1.10.0.omod ${OPENMRS_HOME}/modules/owa-1.10.0.omod
-COPY /dist/* ${OPENMRS_HOME}/owa/drishti/
+COPY drishti ${OPENMRS_HOME}/owa/drishti
 #COPY web/openmrs.war ${TOMCAT_HOME}/webapps/openmrs.war
 #COPY web/modules ${TOMCAT_HOME}/modules
 #COPY web/owa ${TOMCAT_HOME}/owa
