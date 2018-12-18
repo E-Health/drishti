@@ -26,14 +26,16 @@ services:
     #restart: always
 
   mysql:
-    image: mysql:5.6
-    command: "mysqld --character-set-server=utf8 --collation-server=utf8_general_ci"
-    environment:
-      MYSQL_DATABASE: openmrs
-      MYSQL_ROOT_PASSWORD: Admin123
-      MYSQL_USER: openmrs
-      MYSQL_PASSWORD: Admin123
- 
+#    image: mysql:5.6
+#    command: "mysqld --character-set-server=utf8 --collation-server=utf8_general_ci"
+#    environment:
+#      MYSQL_DATABASE: openmrs
+#      MYSQL_ROOT_PASSWORD: Admin123
+#      MYSQL_USER: openmrs
+#      MYSQL_PASSWORD: Admin123
+    build: ./mysql/.
+    image: beapen/drishti-mysql
+
   drishti-haproxy:
     build: ./haproxy/.
     image: beapen/drishti-haproxy:latest
@@ -52,19 +54,19 @@ services:
       - resource-server
 
   drishti-emr:
-    build: ./drishti-emr/web/.
+    build: ./drishti-emr/.
     image: beapen/drishti-emr
     depends_on:
       - mysql
-    environment:
-      DB_DATABASE: openmrs
-      DB_HOST: mysql
-      DB_USERNAME: openmrs
-      DB_PASSWORD: Admin123
-      DB_CREATE_TABLES: 'false'  # change to 'true' if using an empty database
-      DB_AUTO_UPDATE: 'false'    # change to 'true' if using an empty database
-      MODULE_WEB_ADMIN: 'true'   # allow web admin on OpenMRS
-    volumes:
-      - ./openmrs:/usr/local/tomcat/.OpenMRS
-      - /usr/local/tomcat/.OpenMRS/modules/ # used to mount persistent docker volume for modules
-      - /usr/local/tomcat/.OpenMRS/owa/     # used to mount persistent docker volume for owa
+#    environment:
+#      DB_DATABASE: openmrs
+#      DB_HOST: mysql
+#      DB_USERNAME: openmrs
+#      DB_PASSWORD: Admin123
+#      DB_CREATE_TABLES: 'false'  # change to 'true' if using an empty database
+#      DB_AUTO_UPDATE: 'false'    # change to 'true' if using an empty database
+#      MODULE_WEB_ADMIN: 'false'   # allow web admin on OpenMRS
+#    volumes:
+#      - ./openmrs:/usr/local/tomcat/.OpenMRS
+#      - /usr/local/tomcat/.OpenMRS/modules/ # used to mount persistent docker volume for modules
+#      - /usr/local/tomcat/.OpenMRS/owa/     # used to mount persistent docker volume for owa
