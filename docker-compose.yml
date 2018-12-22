@@ -63,8 +63,8 @@ services:
       DB_HOST: mysql
       DB_USERNAME: openmrs
       DB_PASSWORD: Admin123
-      DB_CREATE_TABLES: 'true'  # change to 'true' if using an empty database
-      DB_AUTO_UPDATE: 'true'    # change to 'true' if using an empty database
+      DB_CREATE_TABLES: 'false'  # change to 'true' if using an empty database
+      DB_AUTO_UPDATE: 'false'    # change to 'true' if using an empty database
       MODULE_WEB_ADMIN: 'true'   # allow web admin on OpenMRS
 #    volumes:
 #      - ./openmrs:/usr/local/tomcat/.OpenMRS
