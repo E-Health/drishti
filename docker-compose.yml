@@ -55,7 +55,7 @@ services:
 
   drishti-emr:
     build: ./drishti-emr/web/.
-    image: beapen/drishti-emr
+    image: beapen/drishti-emr:latest
     depends_on:
       - mysql
     environment:
@@ -70,3 +70,12 @@ services:
 #      - ./openmrs:/usr/local/tomcat/.OpenMRS
 #      - /usr/local/tomcat/.OpenMRS/modules/ # used to mount persistent docker volume for modules
 #      - /usr/local/tomcat/.OpenMRS/owa/     # used to mount persistent docker volume for owa
+
+  drishti-act:
+    build: ./drishti-act/.
+    image: beapen/drishti-act:latest
+    depends_on:
+      - drishti-cog
+    env_file:
+      - resource-server.env
+
