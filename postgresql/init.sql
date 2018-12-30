@@ -2,6 +2,14 @@ CREATE DATABASE omh;
 
 \c omh
 
+CREATE TABLE public."user" (
+    first_name character varying(300),
+    last_name character varying(300),
+    age integer,
+    uuid character varying(300) NOT NULL
+);
+
+
 CREATE TABLE oauth_access_token (
   token_id          VARCHAR(256),
   token             BYTEA,

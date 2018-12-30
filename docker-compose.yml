@@ -79,3 +79,10 @@ services:
     env_file:
       - resource-server.env
 
+  drishti-plan:
+    build: ./drishti-plan/.
+    image: beapen/drishti-plan:latest
+    depends_on:
+      - drishti-cog
+    env_file:
+      - resource-server.env
