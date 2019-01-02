@@ -17,18 +17,12 @@ Drishti is a conceptual extension of the [open mHealth](http://www.openmhealth.o
 * ***Drishti is not ready for use. The following instructions are only for those who want to contribute/join the project.***
 
 * Rename resource-server-example.env to resource-server.env and add credentials
-* Shimmer container is included in docker-compose.
-* Build Drishti-cog
 
-Drishti-cog is a Spring-boot application, but it has a dependency on omhserver. How to install the dependency in maven locally is explained [here.](https://github.com/E-Health/OMH-on-FHIR). Change the paths as appropriate in application.yml
+```
+docker-compose -f docker-compose-prebuilt.yml up
+```
 
- * Build openmrs-owa-drishti as explained [here.](https://github.com/dermatologist/openmrs-owa-vue-boilerplate)
- ```
- npm install
- npm run build
- ```
-* OpenMRS container is included in docker-compose. The OWA and module needs to be uploaded using OpenMRS user interface for now. See [Screenshots for uploading OWA](https://wiki.openmrs.org/display/docs/Open+Web+Apps+Module#OpenWebAppsModule-Screenshots) and [instructions for administering OpenMRS modules](https://wiki.openmrs.org/display/docs/Administering+Modules)
-* Other modules are currently just stubs.
+## Features
 
 * Drishti Uses Vue for frontend development. (Not Angular 1.x as in the OMH ecosystem)
 * Drishti uses FHIR as the data model for data exchange and persistence. (Not the OMH format) 
