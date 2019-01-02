@@ -16,7 +16,6 @@ services:
     #restart: always
 
   postgres:
-    build: ./postgresql/.
     image: beapen/drishti-postgres:latest
     #restart: always
 
@@ -27,7 +26,6 @@ services:
       - resource-server.env
 
   drishti-haproxy:
-    build: ./haproxy/.
     image: beapen/drishti-haproxy:latest
     ports:
       - "8080:8080"
@@ -47,3 +45,17 @@ services:
       - resource-server.env
     depends_on:
       - mysql
+
+  drishti-act:
+    image: beapen/drishti-act:latest
+    depends_on:
+      - drishti-cog
+    env_file:
+      - resource-server.env
+
+  drishti-plan:
+    image: beapen/drishti-plan:latest
+    depends_on:
+      - drishti-cog
+    env_file:
+      - resource-server.env
