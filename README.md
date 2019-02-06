@@ -1,4 +1,4 @@
-# :eyes: Drishti | An mHealth sense-plan-act framework!
+# :eyes: Drishti | An mHealth sense-plan-act framework on FHIR!
 
 ## About
 Drishti is a conceptual extension of the [open mHealth](http://www.openmhealth.org/) model to behaviour intervention technology adopting the sense-plan-act paradigm from robotics. [:eyes: Drishti](https://github.com/E-Health/drishti) is also a reference implementation with the following components: 
