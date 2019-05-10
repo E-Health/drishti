@@ -12,6 +12,11 @@ Drishti is a conceptual extension of the [open mHealth](http://www.openmhealth.o
 
 [![Drishti](https://raw.github.com/E-Health/drishti/develop/notes/drishti.png)](http://canehealth.com)
 
+
+<p align="center">
+  <i>Made in <a href="https://www.autodraw.com/share/3WCPLBQM5HMX">AutoDraw</a> as AI drawing experiment!</i>
+</p>
+
 ## Instructions
 
 * ***Drishti is not ready for use. The following instructions are only for those who want to contribute/join the project.***
@@ -31,7 +36,6 @@ docker-compose -f docker-compose-prebuilt.yml up
 ## How to Use
 * OpenMRS at /openmrs (of dockerhost)
 * Drishti-cog at /
-* Currently working on [Drishti-cog](https://github.com/dermatologist/drishti-cog), [Drishti-PHR](https://github.com/dermatologist/openmrs-module-drishti) and [Drishti-EMR](https://github.com/dermatologist/openmrs-owa-drishti)
 * Pull requests welcome to all sub-repositories.
 
 [![OpenMRS](https://raw.github.com/E-Health/drishti/develop/notes/openmrs.png)](http://nuchange.ca)
