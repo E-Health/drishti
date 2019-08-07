@@ -40,6 +40,28 @@ docker-compose -f docker-compose-prebuilt.yml up
 
 [![OpenMRS](https://raw.github.com/E-Health/drishti/develop/notes/openmrs.png)](http://nuchange.ca)
 
+## How to cite
+Bell Raj Eapen, Norm Archer, Kamran Sartipi, and Yufei Yuan. 2019. Drishti: a sense-plan-act extension to open mHealth framework using FHIR. In Proceedings of the 1st International Workshop on Software Engineering for Healthcare (SEH '19). IEEE Press, Piscataway, NJ, USA, 49-52. DOI: https://doi.org/10.1109/SEH.2019.00016
+
+```
+@inproceedings{Eapen:2019:DSE:3353963.3353974,
+ author = {Eapen, Bell Raj and Archer, Norm and Sartipi, Kamran and Yuan, Yufei},
+ title = {Drishti: A Sense-plan-act Extension to Open mHealth Framework Using FHIR},
+ booktitle = {Proceedings of the 1st International Workshop on Software Engineering for Healthcare},
+ series = {SEH '19},
+ year = {2019},
+ location = {Montreal, Quebec, Canada},
+ pages = {49--52},
+ numpages = {4},
+ url = {https://doi.org/10.1109/SEH.2019.00016},
+ doi = {10.1109/SEH.2019.00016},
+ acmid = {3353974},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+ keywords = {FHIR, interoperability, mHealth},
+} 
+
+```
 ## Contributors
 * [Bell Eapen](https://nuchange.ca) (McMaster U) |  [Contact](https://nuchange.ca/contact)
 * See also:  [:fire: The FHIRForm framework for managing healthcare eForms](https://github.com/E-Health/fhirform)
