@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Eapen"
+  given-names: "Bell Raj"
+  orcid: "https://orcid.org/0000-0003-3208-4977"
+- family-names: "Archer"
+  given-names: "Norm"
+  orcid: "https://orcid.org/0000-0003-4666-9570"
+- family-names: "Sartipi"
+  given-names: "Kamran"
+  orcid: "https://orcid.org/0000-0002-3588-5991"
+- family-names: "Yuan"
+  given-names: "Yufei"
+title: "Drishti: An Open mHealth sense-plan-act framework based on FHIR"
+version: 1.0.0
+date-released: 2019-12-22
+url: "https://github.com/E-Health/drishti"
+preferred-citation:
+  type: inproceedings
+  authors:
+  - family-names: "Eapen"
+    given-names: "Bell Raj"
+    orcid: "https://orcid.org/0000-0003-3208-4977"
+  - family-names: "Archer"
+    given-names: "Norm"
+    orcid: "https://orcid.org/0000-0003-4666-9570"
+  - family-names: "Sartipi"
+    given-names: "Kamran"
+    orcid: "https://orcid.org/0000-0002-3588-5991"
+  - family-names: "Yuan"
+    given-names: "Yufei"
+  doi: "10.1109/SEH.2019.00016"
+  journal: "2019 IEEE/ACM 1st International Workshop on Software Engineering for Healthcare (SEH)"
+  month: 4
+  start: 49
+  end: 52
+  title: "Drishti: A sense-plan-act extension to open mHealth framework using FHIR"
+  issue: 1
+  volume: 1
+  year: 2019
