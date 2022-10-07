@@ -14,7 +14,7 @@ authors:
   given-names: "Yufei"
 title: "Drishti: An Open mHealth sense-plan-act framework based on FHIR"
 version: 1.0.0
-date-released: 2019-12-22
+date-released: 2019-12-23
 url: "https://github.com/E-Health/drishti"
 preferred-citation:
   type: inproceedings
